@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sepatu Cowo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+   <!-- Navigasi Atas ala Steam -->
+    
+ 
+  <nav class="main-header">
+    <div class="logo">STEAM FAKE</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Sepatu</a></li>
+      <li><a href="#">Kategori</a></li>
+      <li><a href="#">Tentang</a></li>
+    </ul>
+    <div class="header-right">
+      <a href="#" class="login-button">Masuk</a>
+    </div>
+  </nav>
+
+  <!-- Navigasi Atas ala Steam -->
+<nav class="steam-top-nav">
+    <ul>
+      <li><a href="#">Toko</a></li>
+      <li><a href="#">Baru & Patut Dicoba</a></li>
+      <li><a href="#">Kategori</a></li>
+      <li><a href="#">Toko Poin</a></li>
+      <li><a href="#">Berita</a></li>
+      <li><a href="#">Lab</a></li>
+    </ul>
+    <div class="steam-search">
+      <input type="text" placeholder="cari" />
+      <button><span>🔍</span></button>
+    </div>
+  </nav>
+  
+  <!-- Konten Utama -->
+  <div class="container">
+    <!-- Judul dan Trailer -->
+    <section class="game-header">
+      <h1>Sepatu Cowok dan cewek</h1>
+      <video controls class="trailer">
+        <source src="video.mp4" type="video/mp4" />
+        Browser Anda tidak mendukung video.
+      </video>
+    </section>
+
+    <!-- Galeri Screenshot -->
+    <div class="gallery">
+      <img src="foto2.jpg" alt="Screenshot 1" />
+      <img src="foto3.jpg" alt="Screenshot 2" />
+      <img src="foto4.jpg" alt="Screenshot 3" />
+    </div>
+
+    <!-- Informasi Game -->
+    <section class="game-info">
+      <p><strong>Developer:</strong> NEXON Korea Corporation</p>
+      <p><strong>Publisher:</strong> NEXON</p>
+      <p><strong>Tanggal Rilis:</strong> 7 Okt 2014</p>
+      <button class="play-button">Mainkan Gratis</button>
+    </section>
+
+    <!-- Deskripsi -->
+    <section class="description">
+      <h2>Sepatu Sneakers Pria & Wanita – Nyaman, Stylish, dan Tahan Lama</h2>
+      <p>
+        Lagi cari sepatu kece buat nemenin OOTD kamu? Nih, sepatu satu ini bukan cuma keren dilihat, tapi juga enak banget dipakai! Ringan, empuk, dan cocok buat segala aktivitas. Jalan santai? Nongkrong? Traveling? Gas terus!
+      </p>
+      <div class="keyword-tags">
+        <span>Sering dicari:</span>
+        <button>sepatu</button>
+        <button>sepatu pria</button>
+        <button>sepatu wanita</button>
+        <button>kemeja wanita</button>
+      </div>
+    </section>
+    
+    
+
+    <!-- Ilustrasi Tambahan -->
+<section class="extra-image">
+    <img src="FOTO1.png" alt="Poster Counter-Strike Nexon" />
+  </section>
+  
+
+    <!-- Spesifikasi Sistem -->
+    <<!-- Spesifikasi Sistem -->
+<section class="specs">
+    <h2>Spesifikasi Sepatu</h2>
+    <div class="spec-grid">
+      <div>
+        <h3>Minimum:</h3>
+        <ul>
+          <li><strong>OS:</strong> Windows 7 or later</li>
+          <li><strong>Processor:</strong> Intel Dual Core</li>
+          <li><strong>Memory:</strong> 2 GB RAM</li>
+          <li><strong>Graphics:</strong> Intel HD Graphics</li>
+          <li><strong>Network:</strong> Broadband Internet connection</li>
+          <li><strong>Storage:</strong> 10 GB available space</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Recommended:</h3>
+        <ul>
+          <li><strong>OS:</strong> Windows 10</li>
+          <li><strong>Processor:</strong> Intel Core i3 or higher</li>
+          <li><strong>Memory:</strong> 4 GB RAM</li>
+          <li><strong>Graphics:</strong> NVIDIA GeForce GTX Series</li>
+          <li><strong>Network:</strong> Broadband Internet connection</li>
+          <li><strong>Storage:</strong> 10 GB available space</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navMenu");
+      nav.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

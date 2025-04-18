@@ -1,0 +1,297 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: #1b2838;
+    color: #c7d5e0;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: #171a21;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #c7d5e0;
+  }
+  .header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .search-box {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+  }
+  .login-button {
+    background-color: #5c7e10;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  /* Kontainer utama */
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  .game-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .trailer {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
+  .gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  .gallery img {
+    width: 100%;
+    max-width: 32%;
+    border-radius: 5px;
+  }
+  .game-info {
+    margin-bottom: 20px;
+  }
+  .play-button {
+    background-color: #66c0f4;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .description, .specs {
+    margin-bottom: 30px;
+  }
+  .spec-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .spec-grid div {
+    flex: 1 1 250px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      background-color: #1b2838;
+      padding: 10px 0;
+    }
+    .nav-links.show {
+      display: flex;
+    }
+    .header-right {
+      flex-basis: 100%;
+      margin-top: 10px;
+      justify-content: space-between;
+    }
+    .gallery img {
+      max-width: 100%;
+    }
+    .spec-grid {
+      flex-direction: column;
+    }
+  }
+  
+  .extra-image {
+    margin: 30px 0;
+    text-align: center;
+  }
+  .extra-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Navigasi ala Steam */
+.steam-top-nav {
+    background: linear-gradient(to right, #1b3a61, #24517a);
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .steam-top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .steam-top-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .steam-search {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .steam-search input {
+    background-color: #33688a;
+    color: #fff;
+    border: 1px solid #3b6d99;
+    padding: 5px 8px;
+    border-radius: 3px;
+    outline: none;
+    font-style: italic;
+  }
+  .steam-search button {
+    background-color: #3b6d99;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .steam-search button span {
+    font-size: 14px;
+  }
+  
+  /* Responsive untuk navigasi atas */
+  @media (max-width: 768px) {
+    .steam-top-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .steam-top-nav ul {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .steam-search {
+      width: 100%;
+    }
+    .steam-search input {
+      width: 100%;
+    }
+  }
+
+  /* Box Deskripsi */
+.highlight-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-content h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.highlight-content p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Tag Kata Kunci */
+.keyword-tags {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.keyword-tags span {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.keyword-tags button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.keyword-tags button:hover {
+  background-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .highlight-box {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .highlight-content h2 {
+    font-size: 18px;
+  }
+
+  .highlight-content p {
+    font-size: 15px;
+  }
+
+  .keyword-tags {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .keyword-tags button {
+    width: 100%;
+  }
+}
